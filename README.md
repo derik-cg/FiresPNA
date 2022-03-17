@@ -31,3 +31,5 @@ This script is for a preliminary check that a Time Series can be generated, so t
 ## Master 6
 This script produces the time series used in the paper. This script needs the .RData files generated in master 4, together with the "small" rasters generated in master 1. Then, using the vectorized outlines of fires, it recovers all the dates from the Geotifs. This script also computes the area of the outline. The output is a data.frame with name, date and area.
 
+## stats.R
+This script produces the main statistics: The power spectra and the Weibull median. The autocorrelation function is also there for comparison with the power spectra. In order to obtain the power spectra, the file pwrspc.R must be run first. In the same way, file tpeaks.R must be run in order to compute the largest peaks in the periodogram.
